@@ -1,43 +1,43 @@
 /* Style for the body element */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px; /* Padding around the body */
 }
 
 /* Style for the main heading */
 h1 {
-    color: #333;
+    color: #333; /* Dark grey text color */
 }
 
 /* Style for the form container */
 form {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white; /* White background for forms */
+    padding: 20px; /* Padding inside form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
 }
 
 /* Style for input and textarea elements */
 input, textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Margin above and below */
+    padding: 10px; /* Padding within these fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
 }
 
 /* Style for buttons */
 button {
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #5cb85c; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding within button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 /* Change button background on hover */
 button:hover {
-    background-color: #4cae4c;
+    background-color: #4cae4c; /* Darker green on hover */
 }
