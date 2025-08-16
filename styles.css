@@ -1,13 +1,16 @@
+/* Style for the body element */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
 }
 
+/* Style for the main heading */
 h1 {
     color: #333;
 }
 
+/* Style for the form container */
 form {
     background: white;
     padding: 20px;
@@ -15,6 +18,7 @@ form {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Style for input and textarea elements */
 input, textarea {
     width: 100%;
     margin: 10px 0;
@@ -23,6 +27,7 @@ input, textarea {
     border-radius: 4px;
 }
 
+/* Style for buttons */
 button {
     background-color: #5cb85c;
     color: white;
@@ -32,6 +37,7 @@ button {
     cursor: pointer;
 }
 
+/* Change button background on hover */
 button:hover {
     background-color: #4cae4c;
 }
