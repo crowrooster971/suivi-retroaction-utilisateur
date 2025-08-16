@@ -23,22 +23,25 @@ const retourSchema = new mongoose.Schema({
 
 const Retour = mongoose.model('Retour', retourSchema);
 
-// Routes
+// Route to handle new feedback submissions
 app.post('/retours', async (req, res) => {
     try {
         const nouveauRetour = new Retour(req.body);
         await nouveauRetour.save();
         res.status(201).send(nouveauRetour);
     } catch (error) {
+        // Log error message and respond with 400 status
         res.status(400).send({ message: 'Erreur lors de la sauvegarde du retour', error });
     }
 });
 
+// Route to retrieve all feedback submissions
 app.get('/retours', async (req, res) => {
     try {
         const retours = await Retour.find();
         res.status(200).send(retours);
     } catch (error) {
+        // Log error message and respond with 500 status
         res.status(500).send({ message: 'Erreur lors de la récupération des retours', error });
     }
 });
