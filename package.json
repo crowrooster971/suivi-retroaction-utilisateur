@@ -10,8 +10,8 @@
   "author": "Votre Nom",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0",
-    "mongoose": "^5.10.9"
+    "express": "^4.18.2",
+    "body-parser": "^1.20.0",
+    "mongoose": "^5.13.10"
   }
 }
