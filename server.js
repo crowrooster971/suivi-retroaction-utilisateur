@@ -5,16 +5,16 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Middleware to parse JSON and URL-encoded data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Connexion à la base de données MongoDB
-mongoose.connect('mongodb://localhost:27017/retoursUtilisateurs', { useNewUrlParser: true, useUnifiedTopology: true })
+// Connect to MongoDB database
+mongoose.connect('mongodb://localhost:27017/feedbacks', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connexion à MongoDB réussie'))
     .catch(err => console.error('Erreur de connexion à MongoDB:', err));
 
-// Modèle de données
+// Data model definition
 const retourSchema = new mongoose.Schema({
     nom: String,
     feedback: String,
