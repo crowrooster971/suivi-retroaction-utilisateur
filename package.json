@@ -1,0 +1,17 @@
+{
+  "name": "suivi-retroaction-utilisateur",
+  "version": "1.0.0",
+  "description": "Un système simple de collecte et d'analyse des retours d'utilisateur pour les petites entreprises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'Erreur: aucun test spécifié' && exit 1"
+  },
+  "author": "Votre Nom",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.10.9"
+  }
+}
